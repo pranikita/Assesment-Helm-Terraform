@@ -1,0 +1,16 @@
+dependencies:
+  - name: hubub-dev
+    repository: "file://charts/hububdev"
+    version: ">= 0.0.1"
+    tags:
+      - dev-values
+    import-values:
+      - "//charts/hububdev/values.yaml"
+
+  - name: hubub-prod
+    repository: "file://charts/hububprod"
+    version: ">= 0.0.1"
+    tags:
+      - prod-values
+    import-values:
+      - "//charts/hububprod/values.yaml"
